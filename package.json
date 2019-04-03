@@ -1,0 +1,34 @@
+{
+  "name": "cypress-mochawesome-reporter",
+  "version": "1.0.0",
+  "description": "Test project to integrate mochawesome-merger with cypress while adding screenshot and videos to the report.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "node scripts/cypress.js",
+    "e2e": "cy:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AltarBeastiful/cypress-mochawesome-reporter.git"
+  },
+  "keywords": [
+    "cypress",
+    "reporter",
+    "screenshot",
+    "video"
+  ],
+  "author": "Rémi Benoit",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AltarBeastiful/cypress-mochawesome-reporter/issues"
+  },
+  "homepage": "https://github.com/AltarBeastiful/cypress-mochawesome-reporter#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.2.0",
+    "mochawesome": "^3.1.1",
+    "mochawesome-merge": "^1.0.7",
+    "mochawesome-report-generator": "^3.1.5"
+  }
+}
