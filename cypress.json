@@ -1,8 +1,9 @@
 {
-    "reporter": "mochawesome",
-    "reporterOptions": {
-      "overwrite": false,
-      "html": false,
-      "json": true
-    }
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "projectId": "8ma26k"
 }

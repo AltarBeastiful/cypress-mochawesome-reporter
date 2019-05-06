@@ -6,7 +6,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "node scripts/cypress.js",
-    "e2e": "cypress run --reporter ./mochawesome"
+    "e2e": "cypress run --reporter ./mochawesome --record --key 341971c0-3c21-4d14-9f0b-59d8316090fc"
   },
   "repository": {
     "type": "git",
