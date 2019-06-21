@@ -9,9 +9,21 @@ orbs:
   # the strict explicit version "cypress-io/cypress@1.x.y"
   # to lock the version and prevent unexpected CI changes
   cypress: cypress-io/cypress@1
+executors:
+  base10-recorded:
+    docker:
+      - image: 'cypress/base:10'
+    environment:
+      CYPRESS_RECORD_KEY: 341971c0-3c21-4d14-9f0b-59d8316090fc
 
 workflows:
   build:
     jobs:
       - cypress/run:
+          command: node scripts/cypress.js
+          executor: base10-recorded
           record: true
+          store_artifacts: true
+          post-steps:
+            - store_artifacts:
+                path: mochawesome-report
