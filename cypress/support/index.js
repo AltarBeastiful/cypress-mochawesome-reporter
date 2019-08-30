@@ -23,7 +23,8 @@ Cypress.on('test:after:run', (test, runnable) => {
         addContext({ test }, `../cypress/screenshots/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title} (failed).png`)
     }
 
-    // addContext({ test }, `../cypress/videos/${Cypress.spec.name}.mp4`)
+    // FIXME: Add the video to the 'it' context instead of the whole describe
+    addContext({ test },  `../cypress/videos/${Cypress.spec.name}.mp4`);
 });
 
 // Alternatively you can use CommonJS syntax:
